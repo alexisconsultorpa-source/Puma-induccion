@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Inducción a Puma Energy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pumaRed: '#E31837',
+            pumaGreen: '#00853D',
+            pumaDark: '#1E293B',
+            pumaLight: '#F8FAFC'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #pdf-certificate, #pdf-certificate * {
+        visibility: visible;
+      }
+      #pdf-certificate {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none !important;
+        border: none !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header principal -->
+  <header class="bg-pumaRed text-white shadow-lg no-print">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-3">
+        <div class="bg-white p-2 rounded-lg font-black text-pumaRed text-2xl tracking-wider">
+          PUMA<span class="text-pumaGreen">★</span>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Curso de Inducción a Puma Energy</h1>
+          <p class="text-xs text-red-100">Plataforma de Entrenamiento Teórico para Nuevo Ingreso</p>
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <button onclick="switchTab('study')" id="btn-study" class="px-4 py-2 rounded-lg font-semibold bg-white text-pumaRed shadow hover:bg-slate-100 transition">
+          📖 Módulos de Estudio
+        </button>
+        <button onclick="switchTab('exam')" id="btn-exam" class="px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition">
+          ✍️ Evaluación Final (90%)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido Principal -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 no-print">
+    
+    <!-- PESTAÑA: MÓDULOS DE ESTUDIO -->
+    <section id="tab-study" class="space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-pumaGreen">
+        <h2 class="text-2xl font-bold text-slate-800">Bienvenido al Portal de Capacitación para Agentes de Pista</h2>
+        <p class="mt-2 text-slate-600">
+          Estudia los 7 módulos normativos de la marca. Una vez revisados todos los conceptos, completa la **Evaluación Final**. Para aprobar y generar tu certificado oficial en PDF, debes alcanzar un puntaje mínimo del **90%**.
+        </p>
+      </div>
+
+      <!-- Acordeón de Módulos -->
+      <div class="space-y-4">
+        <!-- Módulo 1 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group" open>
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 1: Identidad y Filosofía de la Marca</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <p><strong>Puma Energy:</strong> Empresa global de energía, responsable con el medio ambiente y enfocada en productos de máxima calidad.</p>
+            <p><strong>Marca Aliada Súper 7:</strong> Red de tiendas de conveniencia con productos de consumo masivo y comida preparada.</p>
+            <div class="bg-emerald-50 border-l-4 border-pumaGreen p-4 rounded">
+              <p class="italic text-emerald-900 font-medium">«El cliente no es una interrupción en nuestro trabajo, es el propósito del mismo. No le estamos haciendo un favor al servirle, él nos está haciendo un favor al darnos la oportunidad de hacerlo.»</p>
+              <span class="text-xs text-emerald-700 block mt-1">— Ray Kroc, McDonald's</span>
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 mb-2">Pilares de un Servicio Excelente:</h4>
+              <ul class="list-disc pl-5 space-y-1">
+                <li><strong>Empatía:</strong> Ponerse en la posición del cliente y entender su necesidad.</li>
+                <li><strong>Actitud Positiva:</strong> Disposición de servicio en todo momento.</li>
+                <li><strong>Buena Comunicación:</strong> Clara, directa y respetuosa.</li>
+                <li><strong>Rapidez:</strong> Agilidad y efectividad sin descuidar los detalles.</li>
+                <li><strong>Amabilidad:</strong> Trato cordial, educado y afable.</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- Módulo 2 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 2: El Agente de Pista como Embajador de Marca</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <p><strong>El Agente de Servicio:</strong> Principal embajador de marca. Profesional responsable, puntual y honesto que genera valor al cliente.</p>
+            <div class="grid md:grid-cols-2 gap-4 bg-slate-50 p-4 rounded-lg">
+              <div>
+                <h4 class="font-bold text-pumaRed">Uniforme Agente de Pista:</h4>
+                <ul class="list-disc pl-5 space-y-1 text-sm">
+                  <li>Camisa polo roja con reflectores y logo Puma.</li>
+                  <li>Pantalón gris oscuro con logo bordado.</li>
+                  <li>Cinturón negro.</li>
+                  <li>Gorra roja con logo bordado Puma Energy.</li>
+                  <li>Botas de seguridad / zapatos negros y calcetines oscuros.</li>
+                  <li>Carnet / Gafete de identificación.</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-800">Presentación e Imagen Personal:</h4>
+                <ul class="list-disc pl-5 space-y-1 text-sm">
+                  <li><strong>Generales:</strong> Sin accesorios (pulseras/cadenas), pantalón no ajustado, uniforme limpio/planchado.</li>
+                  <li><strong>Damas:</strong> Cabello recogido, maquillaje suave, uñas cortas.</li>
+                  <li><strong>Caballeros:</strong> Afeitados, cabello arreglado, uñas cortas.</li>
+                  <li><strong>Nuevos Ingresos:</strong> Uniforme practicante con gorra roja sin marcas, polo sin marcas y pantalón largo oscuro.</li>
+                </ul>
+              </div>
+            </div>
+            <p><strong>Aspectos Operativos Clave:</strong> Venta activa y cruzada (promociones, fluidos, lubricantes), cero celular durante el turno, puntualidad y notificación de ausencias con al menos <strong>24 horas de anticipación</strong>.</p>
+          </div>
+        </details>
+
+        <!-- Módulo 3 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 3: Protocolo de Atención y Dinámica de Pista</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <h4 class="font-bold text-slate-800">Script de Atención Obligatorio (Pasos):</h4>
+            <ol class="list-decimal pl-5 space-y-2 text-sm bg-slate-50 p-4 rounded-lg">
+              <li>¡Bienvenido a Puma! ¿Ya paga con Puma Pris?</li>
+              <li>Descargue nuestra aplicación, ¡es gratis! Aproveche la promoción vigente.</li>
+              <li>¿Desea que le verifique los líquidos del motor por seguridad?</li>
+              <li>¡Recuerde que tenemos Lubricantes Puma en la estación!</li>
+              <li>¿Va a necesitar su factura con nombre después del despacho?</li>
+              <li>¿Va a pagar con efectivo o tarjeta?</li>
+              <li>¿Cuánto le vamos a colocar?</li>
+            </ol>
+            <p><strong>Confirmación del Despacho:</strong> Llamar la atención del cliente, señalar la pantalla y confirmar el pedido mostrando que la bomba está en **ceros (0.00)**.</p>
+          </div>
+        </details>
+
+        <!-- Módulo 4 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 4: Herramientas Digitales y Puma Pris</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm border-collapse border border-slate-200">
+                <thead class="bg-pumaRed text-white">
+                  <tr>
+                    <th class="p-2 border">Concepto</th>
+                    <th class="p-2 border">Detalle de Puntos Puma Pris</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-2 border font-medium">Combustibles</td>
+                    <td class="p-2 border">1 punto por cada litro</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border font-medium">Súper 7 / Lubricantes</td>
+                    <td class="p-2 border">1 punto por cada $1.00</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border font-medium">Redención</td>
+                    <td class="p-2 border">A partir de 100 puntos vía voucher en App</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-3 rounded text-xs text-amber-900">
+              <strong>Paso Crítico en Yappi:</strong> Cuando un cliente paga con Yappi en Puma Pris, el agente debe verificar obligatoriamente que el cliente regrese a la aplicación para cerrar la validación de la transacción.
+            </div>
+          </div>
+        </details>
+
+        <!-- Módulo 5 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 5: Clientes Corporativos (Puma Flota)</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <p>Sistema de crédito corporativo. <strong>No acumula puntos Puma Pris</strong> (tienen descuento directo), pero requiere la misma calidad de atención.</p>
+            <div class="grid md:grid-cols-3 gap-3 text-sm">
+              <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                <strong class="text-pumaRed block mb-1">1. TAG Vehículo</strong>
+                Adhesivo escaneable en el parabrisas.
+              </div>
+              <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                <strong class="text-pumaRed block mb-1">2. Tarjeta Conductor</strong>
+                Tarjeta física leída en el punto de pago.
+              </div>
+              <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                <strong class="text-pumaRed block mb-1">3. Voucher Digital</strong>
+                Código alfanumérico vía SMS o impreso.
+              </div>
+            </div>
+            <p class="text-sm font-semibold text-slate-800">
+              Regla de Oro: Siempre ejecutar la Preautorización en la terminal con PIN de agente y despachar SIEMPRE en LITROS (nunca en dólares).
+            </p>
+          </div>
+        </details>
+
+        <!-- Módulo 6 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 6: Seguridad Operativa y Capacitación</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <ul class="list-disc pl-5 space-y-2 text-sm">
+              <li>Mantener pista y surtidoras libres de derrames de lubricante o combustible.</li>
+              <li>Monitorear ubicación, presión y estado de los extintores de seguridad.</li>
+              <li>Reportar de inmediato cualquier anomalía o daño en infraestructura.</li>
+              <li><strong>Capacitación Continuada:</strong> Formación virtual obligatoria con frecuencia <strong>MENSUAL</strong>, además de evaluaciones por auditorías de cliente incógnito.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Módulo 7 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Módulo 7: Verificación de Líquidos del Motor y Contaminación</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
+            <h4 class="font-bold text-slate-800">1. Tipos de Aceite de Motor:</h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-xs border-collapse border border-slate-200">
+                <thead class="bg-slate-100">
+                  <tr>
+                    <th class="p-2 border">Tipo</th>
+                    <th class="p-2 border">Envoltura</th>
+                    <th class="p-2 border">Viscosidades</th>
+                    <th class="p-2 border">Intervalo Cambio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-2 border font-bold">Full Sintético</td>
+                    <td class="p-2 border">Gris completa</td>
+                    <td class="p-2 border">0W20, 5W20, 5W30</td>
+                    <td class="p-2 border">10,000 – 15,000 km</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border font-bold">Semi-Sintético</td>
+                    <td class="p-2 border">Gris con Negro</td>
+                    <td class="p-2 border">10W30</td>
+                    <td class="p-2 border">7,000 – 8,000 km</td>
+                  </tr>
+                  <tr>
+                    <td class="p-2 border font-bold">Mineral</td>
+                    <td class="p-2 border">Roja</td>
+                    <td class="p-2 border">15W40, 20W50</td>
+                    <td class="p-2 border">5,000 km</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 class="font-bold text-slate-800 pt-2">2. Refrigerante y Fluidos:</h4>
+            <p class="text-sm">El Refrigerante Puma es de presentación <strong>Roja 50/50</strong>. ¡Atención! Los colores de refrigerante <strong>NO deben mezclarse entre sí</strong> (pueden mezclarse con agua solo en emergencias).</p>
+
+            <h4 class="font-bold text-slate-800 pt-2">3. Tipos de Contaminación Grave:</h4>
+            <div class="grid md:grid-cols-2 gap-3 text-xs">
+              <div class="bg-red-50 border border-red-200 p-3 rounded">
+                <strong class="text-red-700 block mb-1">Gasolina en Diésel (MUY PELIGROSO)</strong>
+                Elimina lubricación del diésel y destruye bomba de alta presión e inyectores. <br>
+                <em>Procedimiento:</em> <strong>NO encender motor/contacto</strong>. Remolcar, drenar, lavar tanque y reemplazar filtros.
+              </div>
+              <div class="bg-orange-50 border border-orange-200 p-3 rounded">
+                <strong class="text-orange-700 block mb-1">Diésel en Gasolina</strong>
+                Provoca humo denso, fallas de encendido y apagado de motor. <br>
+                <em>Procedimiento:</em> NO forzar arranque. Remolcar a taller, vaciar tanque, reemplazar bujías/filtro de gasolina.
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- PESTAÑA: EXAMEN DIGITAL -->
+    <section id="tab-exam" class="hidden space-y-6">
+      
+      <!-- Registro de Datos -->
+      <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-pumaRed">
+        <h2 class="text-xl font-bold text-slate-800 mb-4">Registro Oficial de Capacitación</h2>
+        <p class="text-sm text-slate-600 mb-4">Ingresa la información requerida antes de responder la evaluación teórico-práctica.</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nombre del Colaborador *</label>
+            <input type="text" id="input-student" placeholder="Ej. Juan Pérez" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-2 focus:ring-pumaRed outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nombre del Encargado *</label>
+            <input type="text" id="input-instructor" placeholder="Ej. Carlos Mendoza" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-2 focus:ring-pumaRed outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Nombre de la Estación *</label>
+            <input type="text" id="input-station" placeholder="Ej. Estación Transístmica" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-2 focus:ring-pumaRed outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Fecha de Capacitación *</label>
+            <input type="date" id="input-date" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-2 focus:ring-pumaRed outline-none">
+          </div>
+        </div>
+      </div>
+
+      <!-- Examen -->
+      <form id="exam-form" class="space-y-6">
+        
+        <!-- Pregunta 1 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">1. ¿Cuál es el pilar del servicio que se define como "ponerse en la posición del cliente y entender su necesidad"?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q1" value="a"> <span>Rapidez</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q1" value="b"> <span>Empatía</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q1" value="c"> <span>Amabilidad</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">2. ¿Con cuánta anticipación mínima se debe notificar una ausencia por fuerza mayor?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q2" value="a"> <span>2 horas</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q2" value="b"> <span>12 horas</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q2" value="c"> <span>24 horas</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">3. ¿Qué acción obligatoria realiza el agente en la pantalla del surtidor antes de iniciar el despacho?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q3" value="a"> <span>Llamar la atención del cliente y confirmar que el marcador esté en ceros</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q3" value="b"> <span>Presionar la pistola directamente</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q3" value="c"> <span>Esperar a que el cliente se baje del auto</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">4. En el programa Puma Pris, ¿cuántos puntos se acumulan por cada $1.00 de compra en Súper 7 o Lubricantes?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q4" value="a"> <span>1 punto</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q4" value="b"> <span>5 puntos</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q4" value="c"> <span>10 puntos</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">5. ¿Cuál es el paso crítico al procesar pagos con Yappi en Puma Pris?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q5" value="a"> <span>Revisar la señal del teléfono</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q5" value="b"> <span>Verificar que el cliente regrese a la App Puma Pris para cerrar la validación</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q5" value="c"> <span>Ofrecer un producto de Súper 7</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">6. Al despachar a un cliente corporativo de Puma Flota, ¿en qué unidad de medida se debe programar SIEMPRE el surtidor?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q6" value="a"> <span>En Dólares ($)</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q6" value="b"> <span>En Litros (L)</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q6" value="c"> <span>A criterio del cliente</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">7. ¿Con qué frecuencia se debe realizar la capacitación virtual obligatoria de Puma Energy?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q7" value="a"> <span>Semanal</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q7" value="b"> <span>Mensual</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q7" value="c"> <span>Anual</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">8. ¿Qué intervalo de cambio se sugiere para un aceite de motor Full Sintético (0W20 / 5W30)?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q8" value="a"> <span>5,000 km</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q8" value="b"> <span>7,000 km</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q8" value="c"> <span>10,000 km – 15,000 km</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">9. ¿Es correcto mezclar refrigerantes de distintos colores?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q9" value="a"> <span>Sí, no hay inconveniente en mezclar colores</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q9" value="b"> <span>No, los colores de refrigerante no se deben mezclar entre sí</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">10. Si por error se contamina un tanque Diésel introduciendo Gasolina, ¿cuál es la primera acción inmediata?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q10" value="a"> <span>Acelerar para consumir el combustible rápido</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q10" value="b"> <span>NO encender el motor ni poner el switch en contacto</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q10" value="c"> <span>Completar el tanque con más Diésel</span></label>
+          </div>
+        </div>
+
+        <!-- Botón Evaluar -->
+        <button type="button" onclick="evaluateExam()" class="w-full bg-pumaRed text-white py-3 rounded-xl font-bold text-lg hover:bg-red-700 shadow-lg transition">
+          Calcular Calificación y Emitir Resultados
+        </button>
+      </form>
+
+      <!-- Cuadro de Resultado -->
+      <div id="result-card" class="hidden bg-white p-6 rounded-xl shadow-md border-2 border-slate-300">
+        <h3 class="text-xl font-bold mb-2 text-slate-800" id="result-title"></h3>
+        <p class="text-slate-600 mb-4" id="result-desc"></p>
+        <div class="flex items-center space-x-4 mb-6">
+          <div class="text-4xl font-extrabold" id="result-score">0%</div>
+          <div class="text-sm font-semibold text-slate-500" id="result-status"></div>
+        </div>
+        <button id="btn-print" onclick="window.print()" class="hidden bg-pumaGreen text-white px-6 py-3 rounded-lg font-bold hover:bg-emerald-700 shadow transition flex items-center space-x-2">
+          <span>🖨️ Generar y Descargar Registro PDF</span>
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- PLANTILLA REGISTRO PDF (PRINT ONLY) -->
+  <div id="pdf-certificate" class="hidden print:block p-8 bg-white max-w-4xl mx-auto border-8 border-pumaRed">
+    
+    <!-- Encabezado PDF -->
+    <div class="flex justify-between items-center border-b-4 border-pumaGreen pb-4 mb-6">
+      <div>
+        <div class="text-3xl font-black text-pumaRed">PUMA <span class="text-pumaGreen">★</span> ENERGY</div>
+        <div class="text-xs font-bold text-slate-600 tracking-wider">SISTEMA DE GESTIÓN Y CAPACITACIÓN OPERATIVA</div>
+      </div>
+      <div class="text-right">
+        <h2 class="text-xl font-bold text-slate-800 uppercase">Registro de Inducción</h2>
+        <span class="text-xs text-slate-500">Módulo de Formación Agentes de Pista</span>
+      </div>
+    </div>
+
+    <!-- Título Documento -->
+    <div class="text-center bg-slate-50 py-3 rounded border border-slate-200 mb-6">
+      <h1 class="text-2xl font-black text-pumaRed uppercase tracking-wide">Curso de Inducción a Puma Energy</h1>
+      <p class="text-xs text-slate-600 mt-1">Comprobante Oficial de Aprobación de Formación Teórica de Primer Ingreso</p>
+    </div>
+
+    <!-- Datos del Registro -->
+    <div class="grid grid-cols-2 gap-4 mb-6 text-sm bg-slate-50 p-4 rounded-lg border border-slate-200">
+      <div>
+        <span class="font-bold text-slate-700">Colaborador Evaluado:</span>
+        <p id="pdf-student" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
+      </div>
+      <div>
+        <span class="font-bold text-slate-700">Encargado de Capacitación:</span>
+        <p id="pdf-instructor" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
+      </div>
+      <div>
+        <span class="font-bold text-slate-700">Estación de Servicio:</span>
+        <p id="pdf-station" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
+      </div>
+      <div>
+        <span class="font-bold text-slate-700">Fecha de Finalización:</span>
+        <p id="pdf-date" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
+      </div>
+    </div>
+
+    <!-- Resultados del Examen -->
+    <div class="mb-6 p-4 rounded-lg border-2 border-pumaGreen bg-emerald-50/50 flex justify-between items-center">
+      <div>
+        <h3 class="font-bold text-slate-800 text-lg">Resultado de la Evaluación Teórica</h3>
+        <p class="text-xs text-slate-600">Mínimo requerido para aprobación: <strong class="text-slate-800">90%</strong></p>
+      </div>
+      <div class="text-right">
+        <div id="pdf-score" class="text-3xl font-black text-pumaGreen">0%</div>
+        <span class="text-xs font-bold bg-pumaGreen text-white px-2 py-0.5 rounded">ESTADO: APROBADO</span>
+      </div>
+    </div>
+
+    <!-- Módulos Evaluados -->
+    <div class="mb-8">
+      <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-2">Resumen de Contenidos Evaluados (7 Módulos):</h4>
+      <div class="grid grid-cols-2 gap-2 text-xs text-slate-700">
+        <div class="p-2 border rounded bg-slate-50">✓ Mó1: Identidad y Filosofía de Marca (Súper 7)</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 2: Embajador de Marca e Imagen</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 3: Protocolo y Script de Atención</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 4: Herramientas Digitales y Puma Pris</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 5: Clientes Corporativos Puma Flota</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 6: Seguridad y Capacitación Continua</div>
+        <div class="col-span-2 p-2 border rounded bg-slate-50">✓ Módulo 7: Verificación de Líquidos, Viscosidades y Contaminación</div>
+      </div>
+    </div>
+
+    <!-- Sección de Firmas -->
+    <div class="mt-12 pt-8 border-t border-slate-300 grid grid-cols-2 gap-12 text-center text-xs">
+      <div>
+        <div class="border-b border-slate-400 mb-2 h-12"></div>
+        <p class="font-bold text-slate-800" id="pdf-sign-student">Firma del Colaborador</p>
+        <span class="text-slate-500">Agente de Pista / Primer Ingreso</span>
+      </div>
+      <div>
+        <div class="border-b border-slate-400 mb-2 h-12"></div>
+        <p class="font-bold text-slate-800" id="pdf-sign-instructor">Firma del Encargado</p>
+        <span class="text-slate-500">Instructor de Capacitación</span>
+      </div>
+    </div>
+
+    <!-- Pie de página PDF -->
+    <div class="mt-8 text-center text-[10px] text-slate-400 border-t pt-2">
+      Puma Energy © — Documento Oficial de Registro de Formación y Certificación Operativa Interna.
+    </div>
+
+  </div>
+
+  <script>
+    // Inicializar fecha de hoy por defecto
+    document.getElementById('input-date').valueAsDate = new Date();
+
+    // Cambio de pestañas
+    function switchTab(tab) {
+      const studyTab = document.getElementById('tab-study');
+      const examTab = document.getElementById('tab-exam');
+      const btnStudy = document.getElementById('btn-study');
+      const btnExam = document.getElementById('btn-exam');
+
+      if (tab === 'study') {
+        studyTab.classList.remove('hidden');
+        examTab.classList.add('hidden');
+        btnStudy.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaRed shadow hover:bg-slate-100 transition';
+        btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition';
+      } else {
+        studyTab.classList.add('hidden');
+        examTab.classList.remove('hidden');
+        btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaGreen shadow hover:bg-slate-100 transition';
+        btnStudy.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaRed text-white shadow hover:bg-red-700 transition';
+      }
+    }
+
+    // Respuestas correctas del examen
+    const answers = {
+      q1: 'b', // Empatía
+      q2: 'c', // 24 horas
+      q3: 'a', // Marcador en ceros
+      q4: 'a', // 1 punto por $1
+      q5: 'b', // Volver a la App en Yappi
+      q6: 'b', // En Litros
+      q7: 'b', // Mensual
+      q8: 'c', // 10k-15k km
+      q9: 'b', // No mezclar
+      q10: 'b' // No encender motor
+    };
+
+    function evaluateExam() {
+      // Validar datos de formulario
+      const student = document.getElementById('input-student').value.trim();
+      const instructor = document.getElementById('input-instructor').value.trim();
+      const station = document.getElementById('input-station').value.trim();
+      const dateVal = document.getElementById('input-date').value;
+
+      if (!student || !instructor || !station || !dateVal) {
+        alert('Por favor complete todos los datos del Registro Oficial antes de evaluar.');
+        return;
+      }
+
+      let correctCount = 0;
+      const totalQuestions = Object.keys(answers).length;
+
+      for (let key in answers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === answers[key]) {
+          correctCount++;
+        }
+      }
+
+      const scorePercentage = Math.round((correctCount / totalQuestions) * 100);
+
+      // Mostrar Resultados en Pantalla
+      const resultCard = document.getElementById('result-card');
+      const resultTitle = document.getElementById('result-title');
+      const resultDesc = document.getElementById('result-desc');
+      const resultScore = document.getElementById('result-score');
+      const resultStatus = document.getElementById('result-status');
+      const btnPrint = document.getElementById('btn-print');
+
+      resultCard.classList.remove('hidden');
+      resultScore.innerText = scorePercentage + '%';
+
+      if (scorePercentage >= 90) {
+        resultTitle.innerText = '¡Felicidades! Has Aprobado el Curso de Inducción';
+        resultTitle.className = 'text-xl font-bold mb-2 text-pumaGreen';
+        resultDesc.innerText = 'Has obtenido una calificación superior al mínimo requerido (90%). Ya puedes emitir e imprimir tu Registro PDF.';
+        resultStatus.innerText = 'ESTADO: APROBADO';
+        resultStatus.className = 'text-sm font-bold text-pumaGreen bg-emerald-100 px-3 py-1 rounded-full';
+        btnPrint.classList.remove('hidden');
+
+        // Llenar Plantilla PDF
+        document.getElementById('pdf-student').innerText = student;
+        document.getElementById('pdf-instructor').innerText = instructor;
+        document.getElementById('pdf-station').innerText = station;
+        document.getElementById('pdf-date').innerText = dateVal;
+        document.getElementById('pdf-score').innerText = scorePercentage + '%';
+        document.getElementById('pdf-sign-student').innerText = student;
+        document.getElementById('pdf-sign-instructor').innerText = instructor;
+
+      } else {
+        resultTitle.innerText = 'Calificación Insuficiente para Aprobar';
+        resultTitle.className = 'text-xl font-bold mb-2 text-pumaRed';
+        resultDesc.innerText = 'Para aprobar el Curso de Inducción a Puma Energy debes obtener por lo menos un 90%. Por favor repasa los módulos de estudio y vuelve a intentarlo.';
+        resultStatus.innerText = 'ESTADO: NO APROBADO (Mínimo 90%)';
+        resultStatus.className = 'text-sm font-bold text-pumaRed bg-red-100 px-3 py-1 rounded-full';
+        btnPrint.classList.add('hidden');
+      }
+
+      // Scroll hacia el resultado
+      resultCard.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
+```eof
+
+### Características principales de la App:
+* **Colores Corporativos:** Diseñada con la paleta oficial (Verde `#00853D`, Rojo `#E31837`, Blanco y Gris Oscuro).
+* **Módulos Interactivos:** Todo el contenido del manual organizado por secciones colapsables (Súper 7, Protocolo de Atención, Puma Pris, Puma Flota, Seguridad y Módulo 7 de Líquidos y Contaminación).
+* **Examen con Nota Mínima (90%):** Realiza una evaluación automática sobre 10 preguntas fundamentales. Si la nota es inferior al 90%, notifica al usuario que debe repasar los módulos y deshabilita la emisión del PDF.
+* **Certificado PDF y Registro Imprimible:** Al alcanzar o superar el 90%, activa la opción para imprimir/exportar directamente en PDF un registro formal con los campos de **Nombre del Colaborador**, **Nombre del Encargado/Capacitador**, **Fecha**, **Estación de Servicio** y espacio para firmas.
