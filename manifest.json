@@ -3,13 +3,16 @@
   "name": "Curso de Inducción - Puma Energy",
   "icons": [
     {
-      "src": "https://cdn-icons-png.flaticon.com/512/2983 text/2983803.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23E31837'/><text y='65' x='50' font-size='50' text-anchor='middle' fill='white'>P</text></svg>",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "background_color": "#E31837",
   "theme_color": "#E31837",
-  "display": "standalone"
+  "display": "standalone",
+  "orientation": "portrait"
 }
