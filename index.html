@@ -48,17 +48,19 @@
 
   <!-- Header principal -->
   <header class="bg-pumaRed text-white shadow-lg no-print">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row justify-between items-center gap-4">
       <div class="flex items-center space-x-3">
-
         <div>
           <h1 class="text-xl font-bold">Curso de Inducción a Puma Energy</h1>
           <p class="text-xs text-red-100">Plataforma de Entrenamiento Teórico para Nuevo Ingreso</p>
         </div>
       </div>
-      <div class="flex gap-2">
+      <div class="flex flex-wrap justify-center gap-2">
         <button onclick="switchTab('study')" id="btn-study" class="px-4 py-2 rounded-lg font-semibold bg-white text-pumaRed shadow hover:bg-slate-100 transition">
           📖 Módulos de Estudio
+        </button>
+        <button onclick="switchTab('hse')" id="btn-hse" class="px-4 py-2 rounded-lg font-semibold bg-pumaDark text-white shadow hover:bg-slate-700 transition">
+          🛡️ HSE
         </button>
         <button onclick="switchTab('exam')" id="btn-exam" class="px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition">
           ✍️ Evaluación Final (90%)
@@ -75,7 +77,7 @@
       <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-pumaGreen">
         <h2 class="text-2xl font-bold text-slate-800">Bienvenido al Portal de Capacitación para Agentes de Pista</h2>
         <p class="mt-2 text-slate-600">
-          Estudia los 7 módulos normativos de la marca. Una vez revisados todos los conceptos, completa la **Evaluación Final**. Para aprobar y generar tu certificado oficial en PDF, debes alcanzar un puntaje mínimo del **90%**.
+          Estudia los 7 módulos normativos de la marca y revisa la pestaña <strong>HSE</strong>. Una vez revisados todos los conceptos, completa la <strong>Evaluación Final</strong>. Para aprobar y generar tu certificado oficial en PDF, debes alcanzar un puntaje mínimo del <strong>90%</strong>.
         </p>
       </div>
 
@@ -158,9 +160,9 @@
               <li>¿Va a pagar con efectivo o tarjeta?</li>
               <li>¿Cuánto le vamos a colocar?</li>
             </ol>
-            <p><strong>Confirmación del Despacho:</strong> Llamar la atención del cliente, señalar la pantalla y confirmar el pedido mostrando que la bomba está en **ceros (0.00)**, Despida al cliente entregando la factura y diciendo "Gacias, Vuelva Pronto"</p>
+            <p><strong>Confirmación del Despacho:</strong> Llamar la atención del cliente, señalar la pantalla y confirmar el pedido mostrando que la bomba está en <strong>ceros (0.00)</strong>. Despida al cliente entregando la factura y diciendo "Gracias, Vuelva Pronto".</p>
             <div class="bg-amber-50 border-l-4 border-amber-500 p-3 rounded text-xs text-amber-900">
-              <strong>RECUERDA:</strong> Cuando el cliente llega debe ser recibido frente al conductor y ejecutar el despacho después haber hecho un contacto visual directo con el  cliente mientras le dice el protocolo.
+              <strong>RECUERDA:</strong> Cuando el cliente llega debe ser recibido frente al conductor y ejecutar el despacho después haber hecho un contacto visual directo con el cliente mientras le dice el protocolo.
             </div>
           </div>
         </details>
@@ -168,7 +170,7 @@
         <!-- Módulo 4 -->
         <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
           <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
-            <span>Módulo 4:Puma Pris</span>
+            <span>Módulo 4: Puma Pris</span>
             <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
           </summary>
           <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
@@ -196,7 +198,6 @@
                 </tbody>
               </table>
             </div>
-            <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
             <div class="overflow-x-auto">
               <table class="w-full text-sm border-collapse border border-slate-200">
                 <thead class="bg-pumaRed text-white">
@@ -211,24 +212,24 @@
                     <td class="p-2 border">Se acerca el código QR al cliente para escanear después de regresar la pistola al surtidor luego del despacho.</td>
                   </tr>
                   <tr>
-                    <td class="p-2 border font-medium">Auto Servicio/ Servicio Asistido</td>
+                    <td class="p-2 border font-medium">Auto Servicio / Servicio Asistido</td>
                     <td class="p-2 border">Se acerca el Código QR al cliente para escanear antes de hacer el despacho, una vez completada la transacción se hace el cobro, se aprueba desde la tablet y por último se hace el despacho.</td>
                   </tr>
                   <tr>
                     <td class="p-2 border font-medium">Pago En Bomba</td>
-                    <td class="p-2 border">Solo funciona en surtidoras Configuradas en autoservicio, el cliente escanea el código directamente en la surtidora y al hacer el pago la bomba se activa automáticamente, Solo es posible cuando el cliente tiene Visa o Mastercard integrada a la APP.</td>
+                    <td class="p-2 border">Solo funciona en surtidoras configuradas en autoservicio, el cliente escanea el código directamente en la surtidora y al hacer el pago la bomba se activa automáticamente. Solo es posible cuando el cliente tiene Visa o Mastercard integrada a la APP.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-              <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded text-xs text-green-900">
-              <strong>Pagos Aceptados en Puma Pris:</strong> Puntos, Efectivo, Yappy y Targeta de Crédito afiliada a la App, en los casos de autoservicio cuando el cliente intenta hacer una compra pagando con Targeta desde el App, debe ser invitado a usar el método de pago en bomba.
-              </div>
+            <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded text-xs text-green-900">
+              <strong>Pagos Aceptados en Puma Pris:</strong> Puntos, Efectivo, Yappy y Tarjeta de Crédito afiliada a la App. En los casos de autoservicio cuando el cliente intenta hacer una compra pagando con Tarjeta desde el App, debe ser invitado a usar el método de pago en bomba.
+            </div>
             <div class="bg-red-50 border-l-4 border-red-500 p-3 rounded text-xs text-red-900">
               <strong>Paso Crítico en Yappy:</strong> Cuando un cliente paga con Yappy en Puma Pris, el agente debe verificar obligatoriamente que el cliente regrese a la aplicación para cerrar la validación de la transacción.
             </div>
             <div class="bg-amber-50 border-l-4 border-amber-500 p-3 rounded text-xs text-amber-900">
-              <strong>Errores al procesar el pago en Puma Pris:</strong> Cuando el cliente tiene algún error en el app debido a fallas de conexión debe ser dirigido al WhatsApp de soporte donde ingresando una foto clara de su factura podrá obtener sus puntos. Si el cliente tuvo algún error al momento de porcesar el pago desde la App "Targeta integrada, yappy o puntos" podrá completar el pago en efectivo o Targeta física y poner el reclamo en el WhatsApp de soporte.
+              <strong>Errores al procesar el pago en Puma Pris:</strong> Cuando el cliente tiene algún error en el app debido a fallas de conexión debe ser dirigido al WhatsApp de soporte donde ingresando una foto clara de su factura podrá obtener sus puntos. Si el cliente tuvo algún error al momento de procesar el pago desde la App "Tarjeta integrada, Yappy o puntos" podrá completar el pago en efectivo o Tarjeta física y poner el reclamo en el WhatsApp de soporte.
             </div>
           </div>
         </details>
@@ -275,7 +276,7 @@
               <li>Reportar de inmediato cualquier anomalía o daño en infraestructura.</li>
               <li>No se debe despachar un producto si detecta que hay alguna fuga o daño en la manguera o pistola.</li>
               <li>En caso de alerta de Incendio debe tocar el botón de emergencia, ponerse en un lugar seguro y llamar a emergencias.</li>
-              <li>Al recibír un camión cisterna debe verificar tener todos los dispositivos de seguridad necesarios, casco, arnés, botas, conos, letrero de peligro y extintor cerca del area de descarga.</li>
+              <li>Al recibir un camión cisterna debe verificar tener todos los dispositivos de seguridad necesarios, casco, arnés, botas, conos, letrero de peligro y extintor cerca del área de descarga.</li>
               <li><strong>Capacitación Continuada:</strong> Formación de Puma Teams obligatoria con frecuencia <strong>MENSUAL</strong>, además de evaluaciones por auditorías del capacitador y encuestas de los clientes.</li>
             </ul>
           </div>
@@ -323,18 +324,16 @@
             </div>
 
             <h4 class="font-bold text-slate-800 pt-2">2. Refrigerante y Fluidos:</h4>
-            <p class="text-sm">El Refrigerante Puma es de presentación <strong>Roja 50/50</strong>. ¡Atención! Los colores de refrigerante <strong>NO deben mezclarse entre sí</strong>(pueden mezclarse con agua solo en emergencias).</p>
+            <p class="text-sm">El Refrigerante Puma es de presentación <strong>Roja 50/50</strong>. ¡Atención! Los colores de refrigerante <strong>NO deben mezclarse entre sí</strong> (pueden mezclarse con agua solo en emergencias).</p>
             
-            <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700">
             <ul class="list-disc pl-5 space-y-2 text-sm">
               <li>ATF es el líquido que lubrica la transmisión automática.</li>
               <li>ATF full sintéticos se recomienda para la mayoría de autos modernos y su cambio es cada 100 mil KM.</li>
-              <li>Líquido de Frenos DOT-4 es el líquido para rellenar el master de freno y no debe exder la linea de MAX que indica el depósito.</li>
-              <li>Líquido de Power steering es el líquido para dirección hidráulica y no debe exceder la linea de MAX del depósito ni confundirse con el líquido de frenos.</li>
+              <li>Líquido de Frenos DOT-4 es el líquido para rellenar el master de freno y no debe exceder la línea de MAX que indica el depósito.</li>
+              <li>Líquido de Power steering es el líquido para dirección hidráulica y no debe exceder la línea de MAX del depósito ni confundirse con el líquido de frenos.</li>
               <li>Aceite 2T especialmente indicado para motores pequeños.</li>
-              <li><strong>¡ATENCIÓN!:</strong> Los vehículos pueden <strong>NO TENER</strong>, VARILLA de control líquido de transmisión ni DEPÓSITO de liquido de Power steering además <strong>SE PROHÍBE</strong> Abrir el radiador, colocar fluidos traídos por el cliente y poner combustible en envases no autorizados.</li>
+              <li><strong>¡ATENCIÓN!:</strong> Los vehículos pueden <strong>NO TENER</strong> varilla de control de líquido de transmisión ni depósito de líquido de Power steering; además <strong>SE PROHÍBE</strong> abrir el radiador, colocar fluidos traídos por el cliente y poner combustible en envases no autorizados.</li>
             </ul>
-            </div>
             
             <h4 class="font-bold text-slate-800 pt-2">3. Tipos de Contaminación Grave:</h4>
             <div class="grid md:grid-cols-2 gap-3 text-xs">
@@ -354,18 +353,145 @@
       </div>
     </section>
 
+    <!-- PESTAÑA: HSE (SALUD, SEGURIDAD Y MEDIO AMBIENTE) -->
+    <section id="tab-hse" class="hidden space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-pumaRed">
+        <h2 class="text-2xl font-bold text-slate-800">Módulo HSE: Salud, Seguridad y Medio Ambiente (Estaciones de Servicio)</h2>
+        <p class="mt-2 text-slate-600">
+          Lineamientos de seguridad operativa, zonas clasificadas, prevención de incendios, control de derrames, gestión de contratistas e higiene alimentaria basados en el estándar de <strong>Puma Energy Retail</strong>[span_1](start_span)[span_1](end_span).
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- HSE 1 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group" open>
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>HSE 1: Política de Seguridad, Autoridad de Detener el Trabajo y Evaluaciones de Riesgo</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <p><strong>Prioridad Absoluta:</strong> Si existe un conflicto entre las exigencias operativas y la seguridad, <strong>la seguridad siempre será la máxima prioridad</strong>, reduciendo los riesgos en la medida en que sea razonablemente posible[span_2](start_span)[span_2](end_span).</p>
+            <div class="bg-red-50 border-l-4 border-pumaRed p-4 rounded">
+              <strong class="text-pumaRed block mb-1">Autoridad para Detener el Trabajo (SWA - Stop Work Authority):</strong>
+              Cualquier empleado o contratista, independiente de su posición o experiencia en la compañía, tiene el poder y se alienta y espera que <strong>DETENGA UN TRABAJO</strong> de inmediato si identifica un acto o condición insegura que pueda afectar a personas, al medio ambiente o a los activos de la empresa[span_3](start_span)[span_3](end_span).
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-800 mb-1">Evaluación de Riesgos y Reglas de Puma:</h4>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Todo evento peligroso tiene una <strong>Probabilidad</strong> (frecuencia de ocurrencia) y una <strong>Consecuencia</strong> (gravedad del resultado)[span_4](start_span)[span_4](end_span).</li>
+                <li>Las <strong>medidas de control</strong> son los pasos tomados para reducir razonablemente el riesgo al punto más bajo[span_5](start_span)[span_5](end_span).</li>
+                <li><strong>5 Reglas de Puma:</strong> Siga los procedimientos de seguridad; Cuídense unos a otros; Desafíe el comportamiento inseguro; Utilice el EPP requerido; Reporte todos los incidentes[span_6](start_span)[span_6](end_span).</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- HSE 2 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>HSE 2: Familiarización del Sitio, Zonas Peligrosas y Distancias de Seguridad</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <p><strong>Elementos del Sitio e Interceptores:</strong> Es indispensable conocer la ubicación de tanques, tuberías, bombas, tubos de venteo, sistemas de recuperación de vapores (Fase 1b y Fase 2), equipos de emergencia y señalización[span_7](start_span)[span_7](end_span). Los <strong>interceptores/separadores</strong> capturan hidrocarburos y protegen el drenaje superficial y el agua[span_8](start_span)[span_8](end_span).</p>
+            
+            <div class="grid md:grid-cols-3 gap-3">
+              <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                <strong class="text-pumaRed block mb-1">ZONA 0</strong>
+                Atmósfera inflamable/explosiva presente continuamente o por largos períodos[span_9](start_span)[span_9](end_span).
+              </div>
+              <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                <strong class="text-amber-700 block mb-1">ZONA 1</strong>
+                Probable atmósfera inflamable/explosiva durante la operación normal[span_10](start_span)[span_10](end_span).
+              </div>
+              <div class="bg-slate-50 p-3 rounded border border-slate-200">
+                <strong class="text-pumaGreen block mb-1">ZONA 2</strong>
+                Poco probable en operación normal; si ocurre, es por corto tiempo o falla[span_11](start_span)[span_11](end_span).
+              </div>
+            </div>
+
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+              <strong class="text-slate-800 block mb-1">Reglas de Puma para Zonas Peligrosas (Distancias):</strong>
+              <ul class="list-disc pl-5 space-y-1">
+                <li><strong>8 metros:</strong> Alrededor de bombas dispensadoras, y alrededor de bombas o tanques de GLP[span_12](start_span)[span_12](end_span).</li>
+                <li><strong>3 metros:</strong> Alrededor de puntos de inmersión/llenado de tanques subterráneos, tubos de ventilación y cilindros de GLP[span_13](start_span)[span_13](end_span).</li>
+                <li><strong>Prohibiciones:</strong> Prohibido fumar dentro de la propiedad (debe hacerse fuera del área colindante) y prohibido usar equipos que no sean intrínsecamente seguros en zonas peligrosas sin permiso[span_14](start_span)[span_14](end_span).</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
+        <!-- HSE 3 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>HSE 3: Peligros de Combustibles, GLP, Envases Portátiles y Medio Ambiente</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <div class="grid md:grid-cols-3 gap-3">
+              <div class="bg-slate-50 p-3 rounded border">
+                <strong class="text-pumaRed block mb-1">Gasolina</strong>
+                Líquido altamente inflamable; libera vapores incluso a bajas temperaturas. El vapor pesa más que el aire, crea atmósferas explosivas, es tóxico, corrosivo y flota en el agua[span_15](start_span)[span_15](end_span).
+              </div>
+              <div class="bg-slate-50 p-3 rounded border">
+                <strong class="text-slate-800 block mb-1">Diésel</strong>
+                Bajo punto de inflamabilidad (inflamable si se calienta), flota en el agua, es resbaladizo y puede causar dermatitis por contacto con la piel[span_16](start_span)[span_16](end_span).
+              </div>
+              <div class="bg-slate-50 p-3 rounded border">
+                <strong class="text-pumaGreen block mb-1">GLP</strong>
+                Más pesado que el aire, odorizado con mercaptano para detectar fugas, extremadamente frío (riesgo de quemaduras por congelación) y desplaza el oxígeno. Recipientes vacíos o semivacíos presentan los mismos riesgos que llenos[span_17](start_span)[span_17](end_span).
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-slate-800 mb-1">Uso de Contenedores Portátiles de Combustible:</h4>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Solo contenedores metálicos o certificados aprobados para líquidos inflamables (capaces de disipar estática) y con cierre hermético[span_18](start_span)[span_18](end_span).</li>
+                <li>Prohibido vender combustible a menores de 18 años y prohibido llenar envases abiertos o no aprobados[span_19](start_span)[span_19](end_span).</li>
+                <li>Deben llenarse <strong>colocados en el piso de concreto</strong> (nunca dentro o sobre vehículos, motocicletas o botes sin conexión a tierra)[span_20](start_span)[span_20](end_span).</li>
+                <li>En tambores de 55 galones (200 L) sobre camión o remolque, conectar a tierra con cables y abrazaderas firmes y usar tubería profunda para evitar salpicaduras[span_21](start_span)[span_21](end_span).</li>
+              </ul>
+            </div>
+
+            <div class="bg-emerald-50 border-l-4 border-pumaGreen p-4 rounded">
+              <strong class="text-emerald-900 block mb-1">Control Ambiental y Conciliación de Inventarios ("Wetstock"):</strong>
+              Prevenir contaminación al aire (recuperación de vapores), agua (interceptores) y suelo. <em>"No existe una fuga pequeña"</em>: un flujo intermitente puede perder ~35,000 litros/año y 3.2 ml/seg equivalen a ~409,000 litros/año[span_22](start_span)[span_22](end_span).
+            </div>
+          </div>
+        </details>
+
+        <!-- HSE 4 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>HSE 4: Incendios, Emergencias, Contratistas e Higiene Alimentaria</span>
+            <span class="text-pumaRed group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <p><strong>Clasificación de Fuegos:</strong> Clase A (materiales ordinarios), Clase B (líquidos y gases inflamables), Clase C (equipos eléctricos), Clase D (metales) y Clase K (aceites vegetales o animales en cocinas). El triángulo del fuego requiere <strong>Oxígeno, Combustible y Calor</strong>[span_23](start_span)[span_23](end_span).</p>
+            <p><strong>Procedimiento de Emergencia:</strong> Mantener la calma, suspender despacho de combustible y suministro eléctrico (paro de emergencia), activar alarma y evacuar al punto de encuentro, contactar servicios de emergencia, controlar fuentes de ignición, contener derrames si es seguro (arena seca / extintores) y reportar/registrar el incidente[span_24](start_span)[span_24](end_span). El botiquín de primeros auxilios no debe contener medicamentos[span_25](start_span)[span_25](end_span).</p>
+            <p><strong>Contratistas y Permisos de Trabajo:</strong> Antes de iniciar trabajos no rutinarios se debe identificar/registrar al contratista, revisar ATS/JSA, evaluar peligros adicionales (incluyendo tráfico y trabajo en alturas desde 1.2 m, espacios confinados, trabajos en caliente o en GLP) y aplicar <em>Lock-off / Tag-off</em> o Permiso de Trabajo (PTW) cuando corresponda[span_26](start_span)[span_26](end_span).</p>
+            <p><strong>Higiene Alimentaria:</strong> Controlar peligros químicos, físicos, biológicos y alérgenos. Vigilar temperaturas críticas: congelación a <strong>-18 °C</strong>, refrigeración máxima a <strong>8 °C</strong>, zona de peligro de <strong>5 °C a 63 °C</strong>, cocción mínima a <strong>70 °C</strong> y recalentamiento a <strong>75 °C</strong>[span_27](start_span)[span_27](end_span).</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
     <!-- PESTAÑA: EXAMEN DIGITAL -->
     <section id="tab-exam" class="hidden space-y-6">
       
       <!-- Registro de Datos -->
       <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-pumaRed">
         <h2 class="text-xl font-bold text-slate-800 mb-4">Registro Oficial de Capacitación</h2>
-        <p class="text-sm text-slate-600 mb-4">Ingresa la información requerida antes de responder la evaluación teórico-práctica.</p>
+        <p class="text-sm text-slate-600 mb-4">Ingresa la información requerida (incluyendo tu número de teléfono celular) antes de responder la evaluación teórico-práctica.</p>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
           <div>
             <label class="block text-xs font-bold text-slate-700 mb-1">Nombre del Colaborador *</label>
             <input type="text" id="input-student" placeholder="Ej. Juan Pérez" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-2 focus:ring-pumaRed outline-none">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Teléfono Celular *</label>
+            <input type="tel" id="input-phone" placeholder="Ej. 6000-0000" class="w-full border border-slate-300 rounded p-2 text-sm focus:ring-2 focus:ring-pumaRed outline-none">
           </div>
           <div>
             <label class="block text-xs font-bold text-slate-700 mb-1">Nombre del Encargado *</label>
@@ -484,6 +610,56 @@
           </div>
         </div>
 
+        <!-- Pregunta 11 (HSE) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">11. [HSE] Según la Política de Seguridad y la Autoridad para Detener el Trabajo (SWA), si observas un acto o condición insegura en la estación, ¿qué debes hacer?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q11" value="a"> <span>Detener el trabajo de inmediato, sin importar quién lo realice o tu cargo, y reportar</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q11" value="b"> <span>Esperar a que termine el turno para comentarlo si no hay accidente</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q11" value="c"> <span>Priorizar la rapidez de atención sobre la seguridad si hay fila</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 12 (HSE) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">12. [HSE] De acuerdo con las Reglas de Puma para Zonas Peligrosas, ¿cuál es la distancia de seguridad requerida alrededor de las bombas dispensadoras y de la bomba/tanque de GLP?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q12" value="a"> <span>3 metros</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q12" value="b"> <span>8 metros</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q12" value="c"> <span>1 metro</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 13 (HSE) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">13. [HSE] ¿Cómo debe realizarse el llenado de un contenedor portátil aprobado para combustible?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q13" value="a"> <span>Dentro de la cajuela o plataforma del vehículo para mayor comodidad</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q13" value="b"> <span>Colocado directamente en el piso de concreto para disipar la electricidad estática</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q13" value="c"> <span>En cualquier recipiente abierto si el cliente es mayor de edad</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 14 (HSE) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">14. [HSE] ¿Qué característica es propia de los vapores de gasolina y del GLP respecto al aire y a las fugas?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q14" value="a"> <span>Son más livianos que el aire y suben rápidamente al techo</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q14" value="b"> <span>Son más pesados que el aire, pueden acumularse a nivel del suelo/drenajes y el GLP frío causa quemaduras por congelación</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q14" value="c"> <span>La gasolina solo libera vapores por encima de los 100 °C</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 15 (HSE) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">15. [HSE] En la conciliación de inventarios ("Wetstock") y control de riesgos, ¿qué implica una fuga pequeña no detectada y cuál es la zona de peligro de temperatura en alimentos?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q15" value="a"> <span>No tiene impacto relevante y la zona de peligro va de -18 °C a 0 °C</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q15" value="b"> <span>Genera pérdidas acumuladas importantes y contaminación; la zona de peligro de temperatura en alimentos va de 5 °C a 63 °C</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q15" value="c"> <span>Solo afecta el flujo de caja y la zona de peligro va de 70 °C a 100 °C</span></label>
+          </div>
+        </div>
+
         <!-- Botón Evaluar -->
         <button type="button" onclick="evaluateExam()" class="w-full bg-pumaRed text-white py-3 rounded-xl font-bold text-lg hover:bg-red-700 shadow-lg transition">
           Calcular Calificación y Emitir Resultados
@@ -517,7 +693,7 @@
       </div>
       <div class="text-right">
         <h2 class="text-xl font-bold text-slate-800 uppercase">Registro de Inducción</h2>
-        <span class="text-xs text-slate-500">Módulo de Formación Agentes de Pista</span>
+        <span class="text-xs text-slate-500">Módulo de Formación Agentes de Pista & HSE</span>
       </div>
     </div>
 
@@ -528,10 +704,14 @@
     </div>
 
     <!-- Datos del Registro -->
-    <div class="grid grid-cols-2 gap-4 mb-6 text-sm bg-slate-50 p-4 rounded-lg border border-slate-200">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6 text-sm bg-slate-50 p-4 rounded-lg border border-slate-200">
       <div>
         <span class="font-bold text-slate-700">Colaborador Evaluado:</span>
         <p id="pdf-student" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
+      </div>
+      <div>
+        <span class="font-bold text-slate-700">Teléfono Celular:</span>
+        <p id="pdf-phone" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
       </div>
       <div>
         <span class="font-bold text-slate-700">Encargado de Capacitación:</span>
@@ -541,7 +721,7 @@
         <span class="font-bold text-slate-700">Estación de Servicio:</span>
         <p id="pdf-station" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
       </div>
-      <div>
+      <div class="col-span-2 md:col-span-2">
         <span class="font-bold text-slate-700">Fecha de Finalización:</span>
         <p id="pdf-date" class="text-base font-semibold text-slate-900 border-b border-slate-300 pb-1"></p>
       </div>
@@ -561,15 +741,16 @@
 
     <!-- Módulos Evaluados -->
     <div class="mb-8">
-      <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-2">Resumen de Contenidos Evaluados (7 Módulos):</h4>
+      <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-2">Resumen de Contenidos Evaluados (7 Módulos + HSE):</h4>
       <div class="grid grid-cols-2 gap-2 text-xs text-slate-700">
-        <div class="p-2 border rounded bg-slate-50">✓ Mó1: Identidad y Filosofía de Marca (Súper 7)</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 1: Identidad y Filosofía de Marca (Súper 7)</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 2: Embajador de Marca e Imagen</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 3: Protocolo y Script de Atención</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 4: Herramientas Digitales y Puma Pris</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 5: Clientes Corporativos Puma Flota</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 6: Seguridad y Capacitación Continua</div>
-        <div class="col-span-2 p-2 border rounded bg-slate-50">✓ Módulo 7: Verificación de Líquidos, Viscosidades y Contaminación</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo 7: Verificación de Líquidos, Viscosidades y Contaminación</div>
+        <div class="p-2 border rounded bg-slate-50">✓ Módulo HSE: Salud, Seguridad y Medio Ambiente</div>
       </div>
     </div>
 
@@ -601,46 +782,61 @@
     // Cambio de pestañas
     function switchTab(tab) {
       const studyTab = document.getElementById('tab-study');
+      const hseTab = document.getElementById('tab-hse');
       const examTab = document.getElementById('tab-exam');
       const btnStudy = document.getElementById('btn-study');
+      const btnHse = document.getElementById('btn-hse');
       const btnExam = document.getElementById('btn-exam');
+
+      studyTab.classList.add('hidden');
+      hseTab.classList.add('hidden');
+      examTab.classList.add('hidden');
+
+      btnStudy.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaRed text-white shadow hover:bg-red-700 transition';
+      btnHse.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaDark text-white shadow hover:bg-slate-700 transition';
+      btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition';
 
       if (tab === 'study') {
         studyTab.classList.remove('hidden');
-        examTab.classList.add('hidden');
         btnStudy.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaRed shadow hover:bg-slate-100 transition';
-        btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition';
+      } else if (tab === 'hse') {
+        hseTab.classList.remove('hidden');
+        btnHse.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaDark shadow hover:bg-slate-100 transition';
       } else {
-        studyTab.classList.add('hidden');
         examTab.classList.remove('hidden');
         btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaGreen shadow hover:bg-slate-100 transition';
-        btnStudy.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaRed text-white shadow hover:bg-red-700 transition';
       }
     }
 
-    // Respuestas correctas del examen
+    // Respuestas correctas del examen (15 preguntas)
     const answers = {
-      q1: 'b', // Empatía
-      q2: 'c', // 24 horas
-      q3: 'a', // Marcador en ceros
-      q4: 'a', // 1 punto por $1
-      q5: 'b', // Volver a la App en Yappi
-      q6: 'b', // En Litros
-      q7: 'b', // Mensual
-      q8: 'c', // 10k-15k km
-      q9: 'b', // No mezclar
-      q10: 'b' // No encender motor
+      q1: 'b',  // Empatía
+      q2: 'c',  // 24 horas
+      q3: 'a',  // Marcador en ceros
+      q4: 'a',  // 1 punto por $1
+      q5: 'b',  // Volver a la App en Yappi
+      q6: 'b',  // En Litros
+      q7: 'b',  // Mensual
+      q8: 'c',  // 10k-15k km
+      q9: 'b',  // No mezclar
+      q10: 'b', // No encender motor
+      q11: 'a', // SWA: detener trabajo y reportar
+      q12: 'b', // 8 metros
+      q13: 'b', // En el piso de concreto para disipar estática
+      q14: 'b', // Más pesados que el aire / congelación GLP
+      q15: 'b'  // Pérdidas/contaminación Wetstock y 5 °C a 63 °C
     };
 
     function evaluateExam() {
       // Validar datos de formulario
       const student = document.getElementById('input-student').value.trim();
+      const phone = document.getElementById('input-phone').value.trim();
       const instructor = document.getElementById('input-instructor').value.trim();
       const station = document.getElementById('input-station').value.trim();
       const dateVal = document.getElementById('input-date').value;
 
-      if (!student || !instructor || !station || !dateVal) {
-        alert('Por favor complete todos los datos del Registro Oficial antes de evaluar.');
+      if (!student || !phone || !instructor || !station || !dateVal) {
+        alert('Por favor complete todos los datos del Registro Oficial (incluyendo su teléfono celular) antes de evaluar.');
         return;
       }
 
@@ -670,13 +866,14 @@
       if (scorePercentage >= 90) {
         resultTitle.innerText = '¡Felicidades! Has Aprobado el Curso de Inducción';
         resultTitle.className = 'text-xl font-bold mb-2 text-pumaGreen';
-        resultDesc.innerText = 'Has obtenido una calificación superior al mínimo requerido (90%). Ya puedes emitir e imprimir tu Registro PDF.';
+        resultDesc.innerText = `Has obtenido ${correctCount} de ${totalQuestions} respuestas correctas (${scorePercentage}%), superando el mínimo requerido (90%). Ya puedes emitir e imprimir tu Registro PDF.`;
         resultStatus.innerText = 'ESTADO: APROBADO';
         resultStatus.className = 'text-sm font-bold text-pumaGreen bg-emerald-100 px-3 py-1 rounded-full';
         btnPrint.classList.remove('hidden');
 
         // Llenar Plantilla PDF
         document.getElementById('pdf-student').innerText = student;
+        document.getElementById('pdf-phone').innerText = phone;
         document.getElementById('pdf-instructor').innerText = instructor;
         document.getElementById('pdf-station').innerText = station;
         document.getElementById('pdf-date').innerText = dateVal;
@@ -687,7 +884,7 @@
       } else {
         resultTitle.innerText = 'Calificación Insuficiente para Aprobar';
         resultTitle.className = 'text-xl font-bold mb-2 text-pumaRed';
-        resultDesc.innerText = 'Para aprobar el Curso de Inducción a Puma Energy debes obtener por lo menos un 90%. Por favor repasa los módulos de estudio y vuelve a intentarlo.';
+        resultDesc.innerText = `Obtuviste ${correctCount} de ${totalQuestions} respuestas correctas (${scorePercentage}%). Para aprobar el Curso de Inducción a Puma Energy debes obtener por lo menos un 90%. Por favor repasa los módulos de estudio y HSE y vuelve a intentarlo.`;
         resultStatus.innerText = 'ESTADO: NO APROBADO (Mínimo 90%)';
         resultStatus.className = 'text-sm font-bold text-pumaRed bg-red-100 px-3 py-1 rounded-full';
         btnPrint.classList.add('hidden');
