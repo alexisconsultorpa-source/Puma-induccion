@@ -62,6 +62,9 @@
         <button onclick="switchTab('hse')" id="btn-hse" class="px-4 py-2 rounded-lg font-semibold bg-pumaDark text-white shadow hover:bg-slate-700 transition">
           🛡️ HSE
         </button>
+        <button onclick="switchTab('fuel')" id="btn-fuel" class="px-4 py-2 rounded-lg font-semibold bg-amber-600 text-white shadow hover:bg-amber-700 transition">
+          🚛 Descarga de Combustible
+        </button>
         <button onclick="switchTab('exam')" id="btn-exam" class="px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition">
           ✍️ Evaluación Final (90%)
         </button>
@@ -77,7 +80,7 @@
       <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-pumaGreen">
         <h2 class="text-2xl font-bold text-slate-800">Bienvenido al Portal de Capacitación para Agentes de Pista</h2>
         <p class="mt-2 text-slate-600">
-          Estudia los 7 módulos normativos de la marca y revisa la pestaña <strong>HSE</strong>. Una vez revisados todos los conceptos, completa la <strong>Evaluación Final</strong>. Para aprobar y generar tu certificado oficial en PDF, debes alcanzar un puntaje mínimo del <strong>90%</strong>.
+          Estudia los 7 módulos normativos de la marca y revisa las pestañas <strong>HSE</strong> y <strong>Descarga de Combustible</strong>. Una vez revisados todos los conceptos, completa la <strong>Evaluación Final</strong>. Para aprobar y generar tu certificado oficial en PDF, debes alcanzar un puntaje mínimo del <strong>90%</strong>.
         </p>
       </div>
 
@@ -476,6 +479,87 @@
       </div>
     </section>
 
+    <!-- PESTAÑA: DESCARGA DE COMBUSTIBLE (PARA EL PISTERO) -->
+    <section id="tab-fuel" class="hidden space-y-6">
+      <div class="bg-white p-6 rounded-xl shadow-md border-l-8 border-amber-600">
+        <h2 class="text-2xl font-bold text-slate-800">Recepción y Descarga de Combustible para el Pistero</h2>
+        <p class="mt-2 text-slate-600">
+          Guía práctica paso a paso para un <strong>pistero</strong> que comienza en la estación. Nada es tan urgente como hacerlo de forma segura y responsable con el medio ambiente.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Descarga Módulo 1 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group" open>
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Descarga 1: ¿Por Qué Importa la Seguridad? Estática, Ignición, EPP y Derrames</span>
+            <span class="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <p><strong>Electricidad Estática y Puesta a Tierra:</strong> La fricción entre sustancias (como el combustible al fluir por tuberías, mangueras o embudos plásticos) genera carga estática capaz de producir chispas e incendiar vapores inflamables. La <strong>puesta a tierra</strong> conduce cargas acumuladas de forma segura a tierra.</p>
+            <p><strong>Fuentes de Ignición:</strong> Vehículos/motocicletas, trabajos con calor/chispas (pulir, soldar, cortar), llamas abiertas o cigarrillos, fallas eléctricas, estática o rayos.</p>
+            <div>
+              <h4 class="font-bold text-slate-800 mb-1">EPP Requerido del Pistero en la Operación:</h4>
+              <ul class="list-disc pl-5 space-y-1">
+                <li>Anteojos de seguridad y protector facial (ojos y rostro).</li>
+                <li>Casco de seguridad y arnés contra caídas si se sube al camión cisterna.</li>
+                <li>Guantes (cuero, neopreno o nitrilo), ropa <strong>100% algodón</strong> (manga larga y pantalón) y chaleco reflectivo 100% algodón.</li>
+                <li>Botas de seguridad y botas de goma según corresponda.</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 border-l-4 border-pumaRed p-4 rounded">
+              <strong class="text-pumaRed block mb-1">Si ocurre un derrame sin retraso:</strong>
+              Apaga equipos/instalaciones eléctricas en tableros (disyuntores en apagado), no arranques ni entres a vehículos, retira fuentes de calor/energía, absorbe rápido con arena o tierra (<strong>NUNCA uses aserrín</strong>), mantén extintores portátiles a no menos de <strong>10 metros</strong>, avisa a Puma Energy y llama a los bomberos si no se puede controlar.
+            </div>
+          </div>
+        </details>
+
+        <!-- Descarga Módulo 2 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Descarga 2: Llegada del Camión, Área de Descarga y Documentos</span>
+            <span class="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <p><strong>Preparación del Pistero:</strong> Calcula y ordena el combustible según consumo, prepara/libera el área de recepción, restringe el paso a clientes y personas no autorizadas, asegura que no haya mantenimientos que interfieran y <strong>suspende las ventas</strong> antes de descargar.</p>
+            <p><strong>Al Llegar el Camión Cisterna:</strong> Asiste el estacionamiento en terreno nivelado; verifica que el conductor apague motor y accesorios eléctricos, apague la radio, deje el celular en la cabina o en la oficina, coloque conos en el costado expuesto al tráfico (protegiendo mangueras expuestas), ponga calzos en las ruedas y ubique un extintor accesible a unos <strong>10 metros</strong> del punto de descarga.</p>
+            <p><strong>Revisión e Inspección:</strong> El pistero y el conductor revisan fuentes de ignición y riesgos; si existe una condición insegura que no puede remediarse, <strong>NO PROCEDA</strong> y el conductor notifica a Puma Central (TM y Supervisor de Transporte). Revisa que la identificación de la boca del tanque sea la correcta, valida factura, certificado de calibración (si aplica) y números de sellos antes de romperlos.</p>
+          </div>
+        </details>
+
+        <!-- Descarga Módulo 3 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Descarga 3: Medición, Tiempo de Relajación y Conexión de Mangueras</span>
+            <span class="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <ul class="list-disc pl-5 space-y-2">
+              <li><strong>Tiempo de Relajación (5 minutos):</strong> Al verificar niveles (chapa o vara con tabla de calibración) y agua (vara con pasta detectora) en los compartimientos del camión, espera <strong>al menos 5 minutos</strong> antes de introducir cualquier objeto metálico para disipar la electricidad estática.</li>
+              <li><strong>Medición de Tanques de la Estación:</strong> Retira candados de tomas, sigue el formulario de <em>Descarga Segura</em>, mide los tanques de la estación (preferiblemente entre dos personas para mayor precisión, firmando el registro) para confirmar espacio suficiente y verificar si hay agua.</li>
+              <li><strong>Escotillas y Conexiones:</strong> El conductor cierra las escotillas de compartimientos que no se descargan y deja abiertas las que sí se van a descargar para ventilar. Verifica que mangueras y acoples estén en buen estado, conéctalas al codo/tanque y a la válvula del camión, y <strong>ambos (pistero y conductor)</strong> vuelven a verificar conexiones y producto antes de abrir válvulas.</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- Descarga Módulo 4 -->
+        <details class="bg-white rounded-xl shadow-sm border border-slate-200 group">
+          <summary class="p-5 font-bold text-lg text-slate-800 cursor-pointer flex justify-between items-center group-hover:bg-slate-50 rounded-xl">
+            <span>Descarga 4: Descarga, Cierre, Salida y Emergencia por Sobrellenado</span>
+            <span class="text-amber-600 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <div class="p-5 border-t border-slate-100 space-y-4 text-slate-700 text-sm">
+            <p><strong>Durante la Descarga (Transferencia de Custodia):</strong> Al autorizar el pistero, el conductor abre válvulas, revisa el visor/mirilla de inmediato para confirmar el color del producto, permanece cerca de las válvulas y vigila los venteos. Si hay rocío o indicio de sobrellenado/falla de venteo, <strong>detiene el flujo de inmediato</strong> y avisa.</p>
+            <p><strong>Al Completar y Salir:</strong> El conductor cierra válvulas del camión, desconecta y drena mangueras una a la vez hacia el tanque, guarda accesorios y asegura tapones; el pistero verifica que los compartimientos queden vacíos, coloca candados en las bocas de los tanques, restablece las ventas, revisa áreas de contención, firma documentos con nombre y fecha legibles, asiste la salida del camión y usa señales manuales estándar si debe retroceder.</p>
+            <div class="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
+              <strong class="text-amber-900 block mb-1">Emergencia por Sobrellenado:</strong>
+              Detén el flujo y cierra válvulas sin desacoplar mangueras ni entrar a la zona de peligro; avisa para cortar la energía del área; aísla con conos; apaga motores y elimina ignición; contiene con arena, absorbentes o barreras sin que llegue a desagües, alcantarillas o vías fluviales. En casos críticos, llama a Bomberos, Policía y Puma, reporta a Medio Ambiente y no reanudes hasta que el pistero verifique que el área es segura.
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
     <!-- PESTAÑA: EXAMEN DIGITAL -->
     <section id="tab-exam" class="hidden space-y-6">
       
@@ -660,6 +744,56 @@
           </div>
         </div>
 
+        <!-- Pregunta 16 (Descarga de Combustible) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">16. [Descarga] Antes de introducir cualquier objeto metálico en un compartimiento del camión cisterna para medir nivel o agua, ¿cuánto tiempo de relajación se debe esperar como mínimo para disipar la electricidad estática?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q16" value="a"> <span>1 minuto</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q16" value="b"> <span>Al menos 5 minutos</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q16" value="c"> <span>No hace falta esperar si el motor está apagado</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 17 (Descarga de Combustible) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">17. [Descarga] Si ocurre un derrame de combustible en el área de tanques o tuberías, ¿qué material NUNCA se debe utilizar y a qué distancia mínima se colocan extintores portátiles cerca de la contención?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q17" value="a"> <span>Arena; a 1 metro</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q17" value="b"> <span>Aserrín; a una distancia no menor de 10 metros</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q17" value="c"> <span>Tierra; a 2 metros</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 18 (Descarga de Combustible) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">18. [Descarga] Durante la descarga del camión cisterna, ¿qué debe hacerse si se observa rocío de líquido en las líneas de ventilación (venteos) o indicios de sobrellenado?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q18" value="a"> <span>Aumentar la velocidad de descarga para terminar rápido</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q18" value="b"> <span>Suspender/detener el flujo de inmediato, cerrar válvulas sin desacoplar mangueras, cortar energía y aislar el área</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q18" value="c"> <span>Esperar a que se vacíe todo el compartimiento antes de avisar</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 19 (Descarga de Combustible) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">19. [Descarga] ¿Qué acciones corresponden al pistero y al conductor antes y durante la llegada del camión cisterna?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q19" value="a"> <span>Mantener las ventas abiertas y dejar el celular encendido junto a la boca del tanque</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q19" value="b"> <span>Suspender ventas, colocar conos/calzos, apagar motor/corte maestro y validar documentos, sellos y espacio libre en los tanques</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q19" value="c"> <span>Romper los sellos antes de revisar la factura y no medir los tanques de la estación</span></label>
+          </div>
+        </div>
+
+        <!-- Pregunta 20 (Descarga de Combustible) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-200">
+          <p class="font-bold text-slate-800 mb-2">20. [Descarga] Al completar la descarga y antes de que el camión cisterna se retire de la estación, ¿qué es obligatorio verificar y realizar?</p>
+          <div class="space-y-2 text-sm">
+            <label class="flex items-center space-x-2"><input type="radio" name="q20" value="a"> <span>Verificar que los compartimientos queden vacíos, cerrar y poner candados a las bocas de los tanques, restablecer ventas y firmar documentos</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q20" value="b"> <span>Dejar las mangueras conectadas mientras el camión arranca</span></label>
+            <label class="flex items-center space-x-2"><input type="radio" name="q20" value="c"> <span>No revisar si el camión retrocede ni colocar candados en las bocas</span></label>
+          </div>
+        </div>
+
         <!-- Botón Evaluar -->
         <button type="button" onclick="evaluateExam()" class="w-full bg-pumaRed text-white py-3 rounded-xl font-bold text-lg hover:bg-red-700 shadow-lg transition">
           Calcular Calificación y Emitir Resultados
@@ -693,7 +827,7 @@
       </div>
       <div class="text-right">
         <h2 class="text-xl font-bold text-slate-800 uppercase">Registro de Inducción</h2>
-        <span class="text-xs text-slate-500">Módulo de Formación Agentes de Pista & HSE</span>
+        <span class="text-xs text-slate-500">Agentes de Pista, HSE y Descarga de Combustible</span>
       </div>
     </div>
 
@@ -741,7 +875,7 @@
 
     <!-- Módulos Evaluados -->
     <div class="mb-8">
-      <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-2">Resumen de Contenidos Evaluados (7 Módulos + HSE):</h4>
+      <h4 class="font-bold text-xs uppercase tracking-wider text-slate-500 mb-2">Resumen de Contenidos Evaluados (7 Módulos + HSE + Descarga):</h4>
       <div class="grid grid-cols-2 gap-2 text-xs text-slate-700">
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 1: Identidad y Filosofía de Marca (Súper 7)</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 2: Embajador de Marca e Imagen</div>
@@ -751,6 +885,7 @@
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 6: Seguridad y Capacitación Continua</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo 7: Verificación de Líquidos, Viscosidades y Contaminación</div>
         <div class="p-2 border rounded bg-slate-50">✓ Módulo HSE: Salud, Seguridad y Medio Ambiente</div>
+        <div class="col-span-2 p-2 border rounded bg-slate-50">✓ Módulo Descarga de Combustible: Recepción de Camiones Cisterna y Emergencias</div>
       </div>
     </div>
 
@@ -783,17 +918,22 @@
     function switchTab(tab) {
       const studyTab = document.getElementById('tab-study');
       const hseTab = document.getElementById('tab-hse');
+      const fuelTab = document.getElementById('tab-fuel');
       const examTab = document.getElementById('tab-exam');
+
       const btnStudy = document.getElementById('btn-study');
       const btnHse = document.getElementById('btn-hse');
+      const btnFuel = document.getElementById('btn-fuel');
       const btnExam = document.getElementById('btn-exam');
 
       studyTab.classList.add('hidden');
       hseTab.classList.add('hidden');
+      fuelTab.classList.add('hidden');
       examTab.classList.add('hidden');
 
       btnStudy.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaRed text-white shadow hover:bg-red-700 transition';
       btnHse.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaDark text-white shadow hover:bg-slate-700 transition';
+      btnFuel.className = 'px-4 py-2 rounded-lg font-semibold bg-amber-600 text-white shadow hover:bg-amber-700 transition';
       btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-pumaGreen text-white shadow hover:bg-emerald-700 transition';
 
       if (tab === 'study') {
@@ -802,13 +942,16 @@
       } else if (tab === 'hse') {
         hseTab.classList.remove('hidden');
         btnHse.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaDark shadow hover:bg-slate-100 transition';
+      } else if (tab === 'fuel') {
+        fuelTab.classList.remove('hidden');
+        btnFuel.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-amber-700 shadow hover:bg-slate-100 transition';
       } else {
         examTab.classList.remove('hidden');
         btnExam.className = 'px-4 py-2 rounded-lg font-semibold bg-white text-pumaGreen shadow hover:bg-slate-100 transition';
       }
     }
 
-    // Respuestas correctas del examen (15 preguntas)
+    // Respuestas correctas del examen (20 preguntas)
     const answers = {
       q1: 'b',  // Empatía
       q2: 'c',  // 24 horas
@@ -824,7 +967,12 @@
       q12: 'b', // 8 metros
       q13: 'b', // En el piso de concreto para disipar estática
       q14: 'b', // Más pesados que el aire / congelación GLP
-      q15: 'b'  // Pérdidas/contaminación Wetstock y 5 °C a 63 °C
+      q15: 'b', // Pérdidas/contaminación Wetstock y 5 °C a 63 °C
+      q16: 'b', // Al menos 5 minutos de relajación
+      q17: 'b', // Nunca aserrín; extintores a mínimo 10 metros
+      q18: 'b', // Detener flujo, cerrar válvulas, cortar energía y aislar
+      q19: 'b', // Suspender ventas, conos/calzos, apagar motor y validar documentos/tanques
+      q20: 'a'  // Compartimientos vacíos, candados, restablecer ventas y firmar
     };
 
     function evaluateExam() {
@@ -884,7 +1032,7 @@
       } else {
         resultTitle.innerText = 'Calificación Insuficiente para Aprobar';
         resultTitle.className = 'text-xl font-bold mb-2 text-pumaRed';
-        resultDesc.innerText = `Obtuviste ${correctCount} de ${totalQuestions} respuestas correctas (${scorePercentage}%). Para aprobar el Curso de Inducción a Puma Energy debes obtener por lo menos un 90%. Por favor repasa los módulos de estudio y HSE y vuelve a intentarlo.`;
+        resultDesc.innerText = `Obtuviste ${correctCount} de ${totalQuestions} respuestas correctas (${scorePercentage}%). Para aprobar el Curso de Inducción a Puma Energy debes obtener por lo menos un 90%. Por favor repasa los módulos de estudio, HSE y Descarga de Combustible y vuelve a intentarlo.`;
         resultStatus.innerText = 'ESTADO: NO APROBADO (Mínimo 90%)';
         resultStatus.className = 'text-sm font-bold text-pumaRed bg-red-100 px-3 py-1 rounded-full';
         btnPrint.classList.add('hidden');
